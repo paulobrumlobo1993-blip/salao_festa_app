@@ -1,17 +1,46 @@
-# salao_festa_app
+# Salão Festa App 🎉
 
-A new Flutter project.
+Aplicativo em **Flutter** para gerenciamento de **salões de festa**, com **cadastro de salões**, **catálogo de itens**, **agendamentos** e **calendário**.
 
-## Getting Started
+## ✨ Funcionalidades
 
-This project is a starting point for a Flutter application.
+### 🏛️ Salões
+- Cadastrar / editar / excluir salões
+- Adicionar fotos do salão (galeria)
+- Informações: nome, descrição, endereço, telefone, capacidade, preço por hora
 
-A few resources to get you started if this is your first Flutter project:
+### 🧾 Catálogo (por salão)
+- Adicionar itens do catálogo (ex.: buffet, brinquedos, decoração)
+- Foto, descrição e preço por item
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### 📅 Agendamentos
+- Criar / editar / excluir agendamentos
+- Status: **Pendente**, **Confirmado**, **Cancelado**
+- Campos: data, horário (início/fim), cliente, telefone, e-mail, tipo de evento, nº pessoas, valor total, observações
+- Filtro por status
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🗓️ Calendário
+- Visualização mensal com marcação de dias com eventos
+- Lista de agendamentos do dia selecionado
+- Filtro por salão no calendário
+
+## 🧱 Tecnologias
+- Flutter (Material 3)
+- SQLite com `sqflite`
+- `table_calendar` (calendário)
+- `image_picker` (fotos)
+- `intl` (formatação de datas)
+
+## 📂 Estrutura do projeto (principal)
+- `lib/screens/` telas do app
+- `lib/models/` modelos (Salão, Agendamento, Item de catálogo)
+- `lib/services/` acesso ao banco (SQLite)
+- `lib/utils/` tema e utilidades
+
+## ▶️ Como rodar
+1. Instale o Flutter e configure o ambiente.
+2. No terminal, dentro do projeto:
+
+```bash
+flutter pub get
+flutter run
